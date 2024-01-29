@@ -1,5 +1,5 @@
 {
-  "name": "first-package",
+  "name": "utils-package-ac",
   "version": "1.0.0",
   "description": "Package test ",
   "main": "src/index.js",
