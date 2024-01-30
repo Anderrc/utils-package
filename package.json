@@ -1,7 +1,7 @@
 {
   "name": "utils-package-ac",
-  "version": "1.0.0",
-  "description": "Package test ",
+  "version": "1.1.0",
+  "description": "Package with utils",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
@@ -16,7 +16,9 @@
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
+    "@types/jest": "^29.5.11",
     "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3"
   }
 }
