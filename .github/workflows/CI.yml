@@ -1,27 +1,62 @@
 name: Deploy
 
 on:
-  push:
-    branches: [main]
+    push:
+        branches: [main]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+    test:
+        runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
+        name: Tag New Version
+        if: startsWith(github.event.head_commit.message, '[release]') == false
 
-      - name: Use Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+              with:
+                  token: ${{ secrets.GH_TOKEN }}
 
-      - name: Install dependencies
-        run: npm install
+            - name: Set Node.js 19.x
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 19.x
 
-      - name: Publish package
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > .npmrc
-          npm publish
+            # node dependency cache
+            # this is not required but speeds up the process
+            - uses: actions/cache@v3
+              with:
+                  path: ./node_modules
+                  key: node-${{ hashFiles('**/composer.lock') }}
+                  restore-keys: |
+                      node
+
+            - name: Install JS deps
+              uses: borales/actions-yarn@v4
+              with:
+                  cmd: install
+
+            - name: Tag Version
+              run: ./node_modules/semantic-release/bin/semantic-release.js --no-ci
+              env:
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Use Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 14.x
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Publish package
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+              run: |
+                  echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > .npmrc
+                  npm publish
