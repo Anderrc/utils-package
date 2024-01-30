@@ -47,7 +47,6 @@
     "plugins": [
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@ambimax/semantic-release-composer",
       [
         "@semantic-release/npm",
         {
