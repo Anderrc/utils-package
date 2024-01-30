@@ -1,12 +1,12 @@
-# Nombre-de-tu-Paquete
+# utils-package-ac
 
-[Descripción corta del paquete]
+A versatile utility package offering a collection of helpful functions for common tasks. Simplify your JavaScript development with this easy-to-use package.
 
 ## Instalación
 
-Code
-npm install nombre-de-tu-paquete
-CierreCode
+```bash
+npm install utils-package-ac
+```
 
 ## Uso
 
@@ -31,32 +31,32 @@ const capitalizedText = capitalizeWords('hola mundo');
 console.log(capitalizedText);
 ```
 
-## Funciones Disponibles
+## Available Functions
 
 ### `getRandomNumber(min, max)`
 
-Genera un número aleatorio en el rango especificado.
+Generates a random number within the specified range.
 
 ### `formatDate(date)`
 
-Formatea una fecha en el estilo "Mes dd, yyyy".
+Formats a date in the "Month dd, yyyy" style.
 
 ### `isValidEmail(email)`
 
-Valida si una dirección de correo electrónico es válida.
+Validates if an email address is valid.
 
 ### `removeDuplicates(array)`
 
-Elimina elementos duplicados de un array.
+Removes duplicate elements from an array.
 
 ### `capitalizeWords(text)`
 
-Capitaliza la primera letra de cada palabra en un texto.
+Capitalizes the first letter of each word in a text.
 
-## Contribución
+## Contribution
 
-¡Contribuciones son bienvenidas! Si encuentras algún error o tienes sugerencias para mejorar el paquete, por favor, abre un problema o envía un pull request.
+Contributions are welcome! If you find any issues or have suggestions to improve the package, please open an issue or send a pull request.
 
-## Licencia
+## License
 
-Este paquete está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+This package is under the MIT License - see the [LICENSE](LICENSE) file for more details.
