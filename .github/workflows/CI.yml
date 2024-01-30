@@ -32,9 +32,7 @@ jobs:
                       node
 
             - name: Install JS deps
-              uses: borales/actions-yarn@v4
-              with:
-                  cmd: install
+              run: npm install
 
             - name: Tag Version
               run: ./node_modules/semantic-release/bin/semantic-release.js --no-ci
