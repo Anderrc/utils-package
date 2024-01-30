@@ -22,15 +22,6 @@ jobs:
               with:
                   node-version: 20.8.1
 
-            # node dependency cache
-            # this is not required but speeds up the process
-            - uses: actions/cache@v3
-              with:
-                  path: ./node_modules
-                  key: node-${{ hashFiles('**/composer.lock') }}
-                  restore-keys: |
-                      node
-
             - name: Install JS deps
               run: npm install
 
