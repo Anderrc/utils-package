@@ -15,7 +15,6 @@
   "author": "Anderson Castaño",
   "license": "MIT",
   "devDependencies": {
-    "@ambimax/semantic-release-composer": "github:ambimax/semantic-release-composer",
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "@commitlint/cli": "^18.6.0",
