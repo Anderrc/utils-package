@@ -1,6 +1,6 @@
 {
   "name": "utils-package-ac",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package with utils",
   "main": "src/index.ts",
   "scripts": {
