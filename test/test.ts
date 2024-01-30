@@ -1,11 +1,9 @@
-// tests.js
-
 import {
+	capitalizeWords,
 	getRandomNumber,
 	isValidEmail,
 	removeDuplicates,
-	capitalizeWords,
-} from '../src/index.js';
+} from '../src/index';
 
 describe('getRandomNumber', () => {
 	test('genera un número aleatorio en el rango correcto', () => {

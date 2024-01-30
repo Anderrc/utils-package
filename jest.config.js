@@ -1,6 +1,5 @@
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  testEnvironment: 'node',
-  transform: {
-    '^.+\\.js$': 'babel-jest',
-  },
+  preset: 'ts-jest',
+  testEnvironment: 'node'
 };
