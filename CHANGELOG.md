@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Anderrc/utils-package/compare/1.0.0...1.0.1) (2024-01-30)
+
+
+### Bug Fixes
+
+* **fix error:** fix error ([717a84b](https://github.com/Anderrc/utils-package/commit/717a84bf9646b17c8204dac02e4d7a5b4a2a63d1))
+
 # 1.0.0 (2024-01-30)
 
 
