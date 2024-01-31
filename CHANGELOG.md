@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Anderrc/utils-package/compare/1.1.1...1.2.0) (2024-01-31)
+
+
+### Features
+
+* add other workflow for tag version ([ff9a637](https://github.com/Anderrc/utils-package/commit/ff9a63706ff34915310124d07ef13cb499b4e6b0))
+
 ## [1.1.1](https://github.com/Anderrc/utils-package/compare/1.1.0...1.1.1) (2024-01-31)
 
 
