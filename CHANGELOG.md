@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Anderrc/utils-package/compare/1.0.2...1.1.0) (2024-01-31)
+
+
+### Features
+
+* prueba ([915aae0](https://github.com/Anderrc/utils-package/commit/915aae0530b14e1b39a57b8a4c81b42e1e016f87))
+
 ## [1.0.2](https://github.com/Anderrc/utils-package/compare/1.0.1...1.0.2) (2024-01-30)
 
 
