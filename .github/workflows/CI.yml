@@ -31,6 +31,8 @@ jobs:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }}
     deploy:
         runs-on: ubuntu-latest
+        name: Tag New Version
+        if: "contains(github.event.head_commit.message , '[release]')"
 
         steps:
             - uses: actions/checkout@v2
