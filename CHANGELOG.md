@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Anderrc/utils-package/compare/1.1.0...1.1.1) (2024-01-31)
+
+
+### Bug Fixes
+
+* prueba ci ([a771302](https://github.com/Anderrc/utils-package/commit/a771302b87442545cf2d1420993665e4e67e6f5b))
+
 # [1.1.0](https://github.com/Anderrc/utils-package/compare/1.0.2...1.1.0) (2024-01-31)
 
 
