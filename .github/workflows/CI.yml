@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
 
         name: Tag New Version
-        if: startsWith(github.event.head_commit.message, '[release]') == false
+        if: "!contains(github.event.head_commit.message , '[release]')"
 
         steps:
             - name: Checkout code
